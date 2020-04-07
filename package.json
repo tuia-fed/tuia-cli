@@ -1,5 +1,5 @@
 {
-  "name": "tuia-cli",
+  "name": "@tuia/tuia-cli",
   "version": "1.0.0",
   "description": "推啊活动组项目脚手架",
   "main": "bin/main.js",

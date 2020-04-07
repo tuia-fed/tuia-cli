@@ -4,7 +4,7 @@
   "description": "推啊活动组项目脚手架",
   "main": "bin/main.js",
   "bin": {
-    "tuia-cli": "bin/main.js"
+    "tuia": "bin/main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

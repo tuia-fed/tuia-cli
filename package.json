@@ -1,7 +1,7 @@
 {
   "name": "tuia-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "推啊活动组项目脚手架",
   "main": "bin/main.js",
   "bin": {
     "tuia-cli": "bin/main.js"
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "minjs.cn",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",

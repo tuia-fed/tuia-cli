@@ -5,5 +5,7 @@
 ## Usage
 
 ```
-npm install global @tuia/cli
+npm install global @tuia/tuia-cli
+
+tuia create project-name
 ```

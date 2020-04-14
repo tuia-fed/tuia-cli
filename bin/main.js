@@ -16,6 +16,14 @@ program
     require('../lib/create')(name, cleanArgs(cmd))
   })
 
+// 安装依赖
+program
+  .command('install [package-name]')
+  .description('install a new package powered by tuia-cli')
+  .action((name, cmd) => {
+    require('../lib/install')(name, cleanArgs(cmd))
+  })
+
 // 执行参数解析
 program
   .parse(process.argv)
@@ -27,6 +35,11 @@ function camelize (str) {
 
 function cleanArgs (cmd) {
   const args = {}
+
+  if (!cmd.options) {
+    return args
+  }
+
   cmd.options.forEach(o => {
     const key = camelize(o.long.replace(/^--/, ''))
     // if an option is not present and Command has a method with the same name

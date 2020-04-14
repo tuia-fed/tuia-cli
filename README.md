@@ -4,12 +4,12 @@
 
 ## Usage
 
-```
+```bash
 npm install global @tuia/tuia-cli
 
-## 启动项目
-tuia create project-name
+## 创建项目
+tuia create <project-name>
 
-## 安装依赖包
-tuia install package-name
+## 安装依赖包，默认安装在src/packages
+tuia install [package-name]
 ```

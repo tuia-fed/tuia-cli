@@ -16,12 +16,20 @@ program
     require('../lib/create')(name, cleanArgs(cmd))
   })
 
-// 安装依赖
+// 安装业务依赖
 program
   .command('install [package-name]')
   .description('install a new package powered by tuia-cli')
   .action((name, cmd) => {
     require('../lib/install')(name, cleanArgs(cmd))
+  })
+
+// 安装cocos依赖
+program
+  .command('add [package-name]')
+  .description('install a new package powered by tuia-cli')
+  .action((name, cmd) => {
+    require('../lib/add')(name, cleanArgs(cmd))
   })
 
 // 执行参数解析
